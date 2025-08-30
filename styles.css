@@ -84,6 +84,7 @@ body {
   transform: translateX(-50%);
   width: 440px;
   background: var(--purple);
+  margin: 0 auto; 
 }
 
 header h1,
