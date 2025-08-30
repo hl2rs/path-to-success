@@ -224,6 +224,9 @@ article {
   padding-left: 20px;
 }
 
+#why-choose-us-options h4 {
+  margin-top: 0;
+}
 #why-choose-us-options {
   display: flex;
   flex-wrap: wrap;
