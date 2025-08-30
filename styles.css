@@ -1,0 +1,351 @@
+/* CSS BY BRENDAN STEWART */
+
+/* IMPORTED FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap");
+
+/* CSS REST */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ROOT VARIABLES */
+:root {
+  --teal: #4ca7c0;
+  --purple: #484fb7;
+  --lavender: #6b8fe7;
+  --yellow: #e9bb57;
+  --pink: #d9526f;
+  --dark-gray: #1e1e1e;
+  --white: #ffffff;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  max-width: 450px;
+  font-family: "Inter";
+}
+
+body {
+  margin: 0;
+  background: var(--lavender);
+  color: var(--white);
+}
+
+#content {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 440px;
+  background: var(--purple);
+}
+
+header h1,
+header p {
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 20px;
+  font-size: 3em;
+  margin-top: 30px;
+}
+
+header p {
+  margin-top: 10px;
+  font-style: italic;
+  padding: 0px 30px;
+  font-family: "Inter";
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background: var(--yellow);
+  width: auto;
+  margin-top: 40px;
+  position: relative;
+  height: 300px;
+}
+
+nav a{
+  color: var(--purple);
+  font-weight: bold;
+}
+
+nav ul {
+  margin: 15px 0 0 0 ;
+  padding: 0;
+  width: 90%;
+  left: 5%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+nav li {
+  list-style: none;
+  margin: -5px 0 15px 0;
+  background: var(--white);
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+nav h2 {
+  color: var(--dark-gray);
+  font-style: italic;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 1.5em;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+main {
+  padding: 0 20px;
+  margin-top: 15px;
+}
+
+h1,
+h2 {
+  font-family: Kavoon;
+  font-weight: 500;
+}
+
+h2{
+  font-size: 2em;
+}
+
+#our-services h2 {
+  margin-bottom: 0px;
+  font-size: 2em;
+}
+
+article {
+  margin: 20px 0;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 15px;
+  color: var(--dark-gray);
+}
+
+article header {
+  color: var(--purple);
+}
+
+article p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+h3 {
+  color: var(--yellow);
+  font-size: 1.5em;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+h4 {
+  margin-bottom: 4px;
+  margin-top: 15px;
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+article {
+  padding: 30px 30px 20px 20px;
+}
+
+#why-choose-us {
+  background: var(--pink);
+  height: 320px;
+  width: 110%;
+  margin-left: -5%;
+}
+
+#why-choose-us h2 {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+#why-choose-us-options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;  
+  height: 240px;
+  margin-top: -10px;
+  background: rgba(255, 255, 255, 0);
+  gap: 15px;
+  justify-content: space-evenly;
+}
+
+.why-choose-option {
+  width: 48%;
+  padding: 20px;
+  height: 110px;
+  border-radius: 15px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  text-align: center;
+}
+
+#why-choose-option-approach {
+  background: var(--teal);
+}
+
+#why-choose-option-results {
+  background: var(--lavender);
+}
+
+#why-choose-option-environment {
+  background: var(--yellow);
+}
+
+#why-choose-option-flexibility {
+  background: var(--white);
+}
+
+#one-on-one-pricing{
+  margin-top: -20px;
+}
+
+#prices h2 {
+  margin-top: 15px;
+}
+
+#pricing-tables{
+  margin-top: 30px;
+}
+
+#one-on-one-pricing-table,
+#group-pricing-table,
+#workshops-pricing-table,
+#courses-pricing-table {
+  width: 70%;
+  border-collapse: collapse;
+  margin: 10px auto;
+}
+
+#one-on-one-pricing-table th,
+#one-on-one-pricing-table td,
+#group-pricing-table th,
+#group-pricing-table td,
+#workshops-pricing-table th,
+#workshops-pricing-table td,
+#courses-pricing-table th,
+#courses-pricing-table td {
+  border: 3px solid var(--yellow);
+  padding: 20px 15px;
+  text-align: center;
+  color: black;
+  background: var(--white)
+}
+
+#one-on-one-pricing-table th,
+#group-pricing-table th,
+#workshops-pricing-table th,
+#courses-pricing-table th {
+  background: var(--yellow);
+  font-weight: bold;
+}
+
+#take-the-first-step {
+  background: var(--pink);
+  height: 270px;
+  width: 110%;
+  margin-left: -5%;
+  padding: 0px 20px 0px 20px;
+}
+
+#take-the-first-step h2 {
+  padding-top: 12px;
+}
+
+#take-the-first-step p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+
+#schedule-now-button{
+  margin-top: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 8px 3px rgb(0, 0, 0);
+  width: 100%;
+  height:70px;
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  text-align: center;
+  justify-content: space-evenly;
+  height: 90px;
+  align-items: center;
+}
+
+footer a {
+    color: var(--white);
+}
