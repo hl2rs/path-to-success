@@ -1,4 +1,4 @@
-/* CSS BY BRENDAN STEWART*/
+/* CSS BY BRENDAN STEWART */
 
 /* IMPORTED FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap");
@@ -344,6 +344,15 @@ main > section:nth-of-type(4) button {
   font-weight: bold;
   font-size: 1em;
   border: none;
+}
+
+main > section:nth-of-type(4) button a {
+text-decoration: none;
+}
+
+button:hover{
+  background: var(--dark-gray);
+  color: var(--white);
 }
 
 footer{
